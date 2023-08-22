@@ -628,6 +628,12 @@ document.getElementById('home').addEventListener('click', function(){
     document.getElementById('total').innerText = '';
     document.getElementById('discount').innerText = '';
     document.getElementById('itemList').innerText = '';
+
+    const apply = document.getElementById('apply');
+    apply.classList.add('disabled');
+
+    const purchase = document.getElementById('purchase');
+    purchase.setAttribute('disabled', 'true');
 })
 
 
